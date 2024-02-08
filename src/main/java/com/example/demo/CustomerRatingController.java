@@ -15,8 +15,7 @@ public class CustomerRatingController {
     public CustomerRating getCustomerRating() {
         //get CustomerRating from dao
         CustomerRatingDao customerRatingDao = new CustomerRatingDao();
-        CustomerRating customerRating = customerRatingDao.getCustomerRating();
-        return customerRating;
+        return customerRatingDao.getCustomerRating();
     }
 
 }
