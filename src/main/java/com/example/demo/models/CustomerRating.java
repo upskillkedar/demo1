@@ -4,6 +4,17 @@ public class CustomerRating {
     private String customerName;
     private int rating;
 
+    //define customerId
+    private int customerId;
+
+    //define setters and getters for customerId
+    public int getCustomerId() {
+        return customerId;
+    }
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
     public CustomerRating(String customerName, int rating) {
         this.customerName = customerName;
         this.rating = rating;
@@ -27,10 +38,7 @@ public class CustomerRating {
 
     //define method to validate rating
     public boolean validateRating() {
-        if (rating >= 1 && rating <= 5) {
-            return true;
-        }
-        return false;
+        return rating >= 1 && rating <= 5;
     }
 
 }
